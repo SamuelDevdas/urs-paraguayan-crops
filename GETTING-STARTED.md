@@ -80,6 +80,7 @@ outputPath: "./results/gardening-guides-results.json"
 ```
 
 ## Step 4: Run the Evaluation
+(https://github.com/promptfoo/promptfoo/tree/main/examples/simple-cli)
 
 Run the following command to test your prompt with different botanical names:
 

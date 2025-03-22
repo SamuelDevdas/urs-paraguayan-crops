@@ -1,0 +1,26 @@
+"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:
+1. Header
+Local name (Spanish/Guaraní): [AI inserts]
+European counterpart: "Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE]."
+Difficulty: [🌱-🌱🌱🌱] based on tropical adaptability
+2. Core Requirements (Use icons ☀️💧🌱)
+"Grows best in [MONTHS] unlike European seasons"
+"Needs [X]cm daily rain/drought tolerance"
+Critical temp range: [MIN]-[MAX]°C
+3. Tropical Survival Guide
+"Unlike [EUROPEAN VEGETABLE], requires..." (shade/soil/pest specifics)
+Local pest solution: "Paraguayan farmers prevent [PEST] by [LOCAL HACK]"
+4. Visual Guide
+[AI suggests 3 image types: seedling stage, mature plant, common issue]
+Harvest cue: "Pick when [VISUAL SIGN]"
+5. Paraguayan Pro Tip
+Storage: "Keep fresh for [X] days using [LOCAL METHOD]."
+Preparation: "Always [LOCAL COOKING TECHNIQUE] to enhance flavor."
+Rules:
+Reference but don't repeat General Guide (soil/pest/season basics)
+Use metric & Paraguayan local terms (e.g., 'tacurú soil')
+Include QR code placeholder [GENERAL_GUIDE_QR]
+Strict 350-word limit, bullet points, 8th-grade reading level"*
+
+
+Generate guide for Sechium edule

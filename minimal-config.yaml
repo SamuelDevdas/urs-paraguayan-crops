@@ -1,0 +1,11 @@
+description: "Minimal Promptfoo Test"
+
+prompts:
+  - "Create a gardening guide for {{plant}} in Paraguay."
+
+providers:
+  - id: ollama:hf.co/MaziyarPanahi/ZYH-LLM-Qwen2.5-14B-V3-GGUF:Q5_K_M
+
+tests:
+  - vars:
+      plant: "Sechium edule (Chayote)"

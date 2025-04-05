@@ -21,6 +21,3 @@ Reference but don't repeat General Guide (soil/pest/season basics)
 Use metric & Paraguayan local terms (e.g., 'tacurú soil')
 Include QR code placeholder [GENERAL_GUIDE_QR]
 Strict 350-word limit, bullet points, 8th-grade reading level"*
-
-
-Generate guide for Sechium edule

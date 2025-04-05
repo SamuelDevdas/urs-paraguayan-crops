@@ -5,7 +5,43 @@ description: "Paraguayan Crops Gardening Guide Test"
 # You can specify multiple prompts to compare different versions
 prompts:
   # - file://1-page-gardening-guide-prompt.txt
-  # - file://simple-prompt.txt
+  - file://simple-prompt.txt
+  
+# PROMPT CAN BE USED DIRECTLY IN THE CONFIG AS WELL AS FOLLOWS:
+
+  # - 'Act as a tropical agriculture expert. Generate a 1-page gardening guide for {{botanical_name}} optimized for European expats in Paraguay. Use this structure:
+  #     1. Header
+  #     Local name (Spanish/Guaraní): [AI inserts]
+  #     European counterpart: "Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE]."
+  #     Difficulty: [🌱-🌱🌱🌱] based on tropical adaptability
+  #     2. Core Requirements (Use icons ☀️💧🌱)
+  #     "Grows best in [MONTHS] unlike European seasons"
+  #     "Needs [X]cm daily rain/drought tolerance"
+  #     Critical temp range: [MIN]-[MAX]°C
+  #     3. Tropical Survival Guide
+  #     "Unlike [EUROPEAN VEGETABLE], requires..." (shade/soil/pest specifics)
+  #     Local pest solution: "Paraguayan farmers prevent [PEST] by [LOCAL HACK]"
+  #     4. Visual Guide
+  #     [AI suggests 3 image types: seedling stage, mature plant, common issue]
+  #     Harvest cue: "Pick when [VISUAL SIGN]"
+  #     5. Paraguayan Pro Tip
+  #     Storage: "Keep fresh for [X] days using [LOCAL METHOD]."
+  #     Preparation: "Always [LOCAL COOKING TECHNIQUE] to enhance flavor."
+  #     Rules:
+  #     Reference but dont repeat General Guide (soil/pest/season basics)
+  #     Use metric & Paraguayan local terms (e.g., 'tacurú soil')
+  #     Include QR code placeholder [GENERAL_GUIDE_QR]
+  #     Strict 350-word limit, bullet points, 8th-grade reading level"*'
+
+  # - 'Create a 1-page gardening guide for {{botanical_name}} in Paraguay. Include:
+  #     1. Local name (Spanish/Guaraní)
+  #     2. Growing conditions (soil, climate)
+  #     3. Planting instructions
+  #     4. Care requirements
+  #     5. Harvesting tips
+  #     6. Common pests and diseases
+  #     7. Cultural significance in Paraguay'    
+
 # ========== PROVIDER CONFIGURATION ==========
 # 'providers' defines which LLM models/APIs will process your prompts
 # Each provider has an 'id' that specifies the model and optional configuration
@@ -31,7 +67,7 @@ providers:
 tests:
   # Test case 1: Chayote squash
   - vars:                                # Variables to substitute in the prompt
-      BOTANICAL NAME: "Sechium edule"    # This replaces [BOTANICAL NAME] in the prompt
+      botanical_name: "Sechium edule"    # This replaces {{botanical_name}} in the prompt
     description: "Chayote squash gardening guide"  # Human-readable description
     # Placeholder for future assertions (commented out)
     # assert:                            # Assertions verify the output meets criteria
@@ -42,19 +78,19 @@ tests:
   
   # # Test case 2: Cassava
   # - vars:
-  #     BOTANICAL NAME: "Manihot esculenta"
+  #     botanical_name: "Manihot esculenta"
   #   description: "Cassava gardening guide"
    
   
   # # Test case 3: Sweet potato
   # - vars:
-  #     BOTANICAL NAME: "Ipomoea batatas"
+  #     botanical_name: "Ipomoea batatas"
   #   description: "Sweet potato gardening guide"
    
   
   # # Test case 4: Common bean
   # - vars:
-  #     BOTANICAL NAME: "Phaseolus vulgaris"
+  #     botanical_name: "Phaseolus vulgaris"
   #   description: "Common bean gardening guide"
    
 

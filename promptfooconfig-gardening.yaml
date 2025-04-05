@@ -4,8 +4,8 @@ description: "Paraguayan Crops Gardening Guide Test"
 # The 'prompts' section defines the prompt templates to be tested
 # You can specify multiple prompts to compare different versions
 prompts:
-  - file://1-page-gardening-guide-prompt.txt
-
+  # - file://1-page-gardening-guide-prompt.txt
+  - file://simple-prompt.txt
 # ========== PROVIDER CONFIGURATION ==========
 # 'providers' defines which LLM models/APIs will process your prompts
 # Each provider has an 'id' that specifies the model and optional configuration
@@ -23,7 +23,7 @@ providers:
   #   config:
   #     temperature: 0
   
-  
+
 
 # ========== TEST CASES ==========
 # 'tests' define the different inputs to test with your prompts

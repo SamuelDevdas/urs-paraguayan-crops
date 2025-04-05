@@ -1,4 +1,4 @@
-Create a 1-page gardening guide for "{{BOTANICAL NAME}}" in Paraguay. Include:
+Create a 1-page gardening guide for {{BOTANICAL NAME}} in Paraguay. Include:
 
 1. Local name (Spanish/Guaraní)
 2. Growing conditions (soil, climate)

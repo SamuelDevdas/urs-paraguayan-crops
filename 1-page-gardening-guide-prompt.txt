@@ -1,4 +1,4 @@
-"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:
+Act as a tropical agriculture expert. Generate a 1-page gardening guide for {{BOTANICAL NAME}} optimized for European expats in Paraguay. Use this structure:
 1. Header
 Local name (Spanish/Guaraní): [AI inserts]
 European counterpart: "Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE]."

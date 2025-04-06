@@ -79,6 +79,13 @@ tests:
 outputPath: "./results/gardening-guides-results.json"
 ```
 
+## EXPORT API KEYS
+```bash
+export GROQ_API_KEY=your_api_key_here  
+```
+
+
+
 ## Step 4: Run the Evaluation
 (https://github.com/promptfoo/promptfoo/tree/main/examples/simple-cli)
 
@@ -94,7 +101,8 @@ After the evaluation completes, you can view the results:
 
 ```bash
 npx promptfoo@latest view
-```
+```npx promptfoo@latest view
+
 
 This will open a web interface where you can compare the outputs for different botanical names.
 
@@ -119,8 +127,8 @@ If you see template rendering errors, check your configuration syntax:
 
 ## Additional Resources
 
-- [Promptfoo Documentation](https://www.promptfoo.dev/docs/)
+- [Promptfoo Documentation](https://www.promptfoo.dev/)
 - [Promptfoo Configuration Guide](https://www.promptfoo.dev/docs/configuration/guide/)
 - [Promptfoo Parameters Reference](https://www.promptfoo.dev/docs/configuration/parameters/)
-
+[openai](https://www.promptfoo.dev/docs/providers/openai/)
 Happy prompt testing!

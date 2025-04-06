@@ -1,0 +1,9 @@
+Create a 2-page gardening guide for "{{BOTANICAL NAME}}" in Paraguay. Include:
+
+1. Local name (Spanish/Guaraní)
+2. Growing conditions (soil, climate)
+3. Planting instructions
+4. Care requirements
+5. Harvesting tips
+6. Common pests and diseases
+7. Cultural significance in Paraguay

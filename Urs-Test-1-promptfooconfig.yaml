@@ -1,0 +1,163 @@
+description: "Paraguayan Crops Gardening Guide Test"
+
+# ========== PROMPT CONFIGURATION ==========
+# The 'prompts' section defines the prompt templates to be tested
+# You can specify multiple prompts to compare different versions
+prompts:
+  # - file://1-page-gardening-guide-prompt.txt
+  # - file://simple-prompt.txt
+  - file://Urs-Test-1-Prompt-nr-1.txt
+
+  
+# PROMPT CAN BE USED DIRECTLY IN THE CONFIG AS WELL AS FOLLOWS:
+
+  # - 'Act as a tropical agriculture expert. Generate a 1-page gardening guide for {{botanical_name}} optimized for European expats in Paraguay. Use this structure:
+  #     1. Header
+  #     Local name (Spanish/Guaraní): [AI inserts]
+  #     European counterpart: "Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE]."
+  #     Difficulty: [🌱-🌱🌱🌱] based on tropical adaptability
+  #     2. Core Requirements (Use icons ☀️💧🌱)
+  #     "Grows best in [MONTHS] unlike European seasons"
+  #     "Needs [X]cm daily rain/drought tolerance"
+  #     Critical temp range: [MIN]-[MAX]°C
+  #     3. Tropical Survival Guide
+  #     "Unlike [EUROPEAN VEGETABLE], requires..." (shade/soil/pest specifics)
+  #     Local pest solution: "Paraguayan farmers prevent [PEST] by [LOCAL HACK]"
+  #     4. Visual Guide
+  #     [AI suggests 3 image types: seedling stage, mature plant, common issue]
+  #     Harvest cue: "Pick when [VISUAL SIGN]"
+  #     5. Paraguayan Pro Tip
+  #     Storage: "Keep fresh for [X] days using [LOCAL METHOD]."
+  #     Preparation: "Always [LOCAL COOKING TECHNIQUE] to enhance flavor."
+  #     Rules:
+  #     Reference but dont repeat General Guide (soil/pest/season basics)
+  #     Use metric & Paraguayan local terms (e.g., 'tacurú soil')
+  #     Include QR code placeholder [GENERAL_GUIDE_QR]
+  #     Strict 350-word limit, bullet points, 8th-grade reading level"*'
+
+  # - 'Create a 1-page gardening guide for {{botanical_name}} in Paraguay. Include:
+  #     1. Local name (Spanish/Guaraní)
+  #     2. Growing conditions (soil, climate)
+  #     3. Planting instructions
+  #     4. Care requirements
+  #     5. Harvesting tips
+  #     6. Common pests and diseases
+  #     7. Cultural significance in Paraguay'    
+
+# ========== PROVIDER CONFIGURATION ==========
+# 'providers' defines which LLM models/APIs will process your prompts
+# Each provider has an 'id' that specifies the model and optional configuration
+providers:
+  # Active provider - this is the model that will actually run
+  # - id: ollama:hf.co/MaziyarPanahi/ZYH-LLM-Qwen2.5-14B-V3-GGUF:Q5_K_M
+  #   config:
+  #     temperature: 0  # Controls randomness: 0 = deterministic, 1 = creative
+      # Other possible parameters include:
+      # max_tokens: 1000  # Maximum length of response
+      # top_p: 0.9       # Nucleus sampling parameter
+  
+  # Commented out providers that can be uncommented for future testing
+  # - id: ollama:gemma3:1b                ### BEST OVERALL PERFORMANCE
+  #   config:
+  #     temperature: 0
+
+  # - id: openai:gpt-4o-mini
+  #   config:
+  #     temperature: 0
+  #     # max_tokens: 128
+  #     apiKey: sk-abc123
+
+  - id: groq:llama-3.3-70b-versatile
+    config:
+      temperature: 0.7
+      # max_completion_tokens: 100
+
+# ========== TEST CASES ==========
+# 'tests' define the different inputs to test with your prompts
+# Each test case can have variables, descriptions, and assertions
+tests:
+  # Test case 1: Chayote squash
+  # - vars:                                # Variables to substitute in the prompt
+  #     botanical_name: "Sechium edule"    # This replaces {{botanical_name}} in the prompt
+  #   description: "Chayote squash gardening guide"  # Human-readable description
+  #   # Placeholder for future assertions (commented out)
+  #   # assert:                            # Assertions verify the output meets criteria
+  #   #   - type: javascript               # Run JavaScript to validate output
+  #   #     value: output.length <= 2500   # Approximate 350 word limit
+  #   #   - type: contains                 # Check if output contains specific text
+  #   #     value: "Local name (Spanish/Guaraní):"
+  
+  # Test case 2: Cassava
+  - vars:
+      botanical_name: "Manihot esculenta"
+      # outputpath:"cassaveajson"
+    description: "Cassava gardening guide"
+   
+  
+  # # Test case 3: Sweet potato
+  - vars:
+      botanical_name: "Ipomoea batatas"
+      # outputpath:"Sweetpotatoe.json"
+    description: "Sweet potato gardening guide"
+   
+  
+  # # Test case 4: Common bean
+  # - vars:
+  #     botanical_name: "Phaseolus vulgaris"
+  #   description: "Common bean gardening guide"
+   
+
+# ========== OUTPUT CONFIGURATION ==========
+# Controls where and how results are saved
+outputPath: "./results/test1.json"  # Path to save results
+# The results will be saved in JSON format and can be viewed later
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ========== ADVANCED CONFIGURATION ==========
+
+# ========== EVALUATION OPTIONS ==========
+# Controls how tests are executed (commented out for now)
+# evaluateOptions:
+#   maxConcurrency: 5       # Number of tests to run in parallel
+#   showProgressBar: true   # Display progress during evaluation
+#   cache: true             # Cache results to avoid re-running identical tests
+
+# ========== TRANSFORMATIONS ==========
+# Transformations process the output before evaluation or display
+# These are JavaScript functions that can modify or extract data from outputs
+# transforms:
+#   - name: "Extract word count"
+#     path: "./transforms/wordCount.js"  # Path to a JavaScript file
+#   - name: "Check structure compliance"
+#     path: "./transforms/structureCheck.js"
+#   # You can also define inline transformations:
+#   # - name: "Extract temperature"
+#   #   function: |
+#   #     (output) => {
+#   #       const match = output.match(/(\d+)-(\d+)°C/);
+#   #       return match ? { min: match[1], max: match[2] } : null;
+#   #     }
+
+# ========== SHARING OPTIONS ==========
+# Controls how results can be shared with others (commented out for now)
+# sharing:
+#   enabled: true           # Enable sharing functionality
+#   title: "Paraguayan Crops Gardening Guide Evaluation"
+#   description: "Testing gardening guide generation for different crops in Paraguay"
+#   # When enabled, promptfoo generates a shareable link to view results

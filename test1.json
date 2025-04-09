@@ -1,0 +1,220 @@
+{
+  "evalId": "eval-vLX-2025-04-08T22:50:27",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-04-08T22:50:27.716Z",
+    "prompts": [
+      {
+        "raw": "\"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*",
+        "label": "Urs-Test-1-Prompt-nr-1.txt: \"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*",
+        "id": "ee56ad1b6ffa99abacb2676aab0c0d9c69310f3b2072462ba85a1339d9b661e5",
+        "provider": "groq:llama-3.3-70b-versatile",
+        "metrics": {
+          "score": 2,
+          "testPassCount": 2,
+          "testFailCount": 0,
+          "testErrorCount": 0,
+          "assertPassCount": 0,
+          "assertFailCount": 0,
+          "totalLatencyMs": 19,
+          "tokenUsage": {
+            "total": 1390,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 1390,
+            "numRequests": 2,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "assertion": null
+        },
+        "id": "06c0502e-a5af-4e5c-85b2-5eac964ba735",
+        "latencyMs": 10,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*",
+          "label": "Urs-Test-1-Prompt-nr-1.txt: \"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*"
+        },
+        "promptId": "ee56ad1b6ffa99abacb2676aab0c0d9c69310f3b2072462ba85a1339d9b661e5",
+        "promptIdx": 0,
+        "provider": {
+          "id": "groq:llama-3.3-70b-versatile",
+          "label": ""
+        },
+        "response": {
+          "output": "**Tropical Gardening Guide: Cucumis sativus (Pepino)**\nLocal name (Spanish/Guaraní): Pepino/Güri\nEuropean counterpart: Similar to cucumber but with a sweeter taste and softer skin.\nDifficulty: 🌱🌱 (easy to moderate) based on tropical adaptability\n\n**Core Requirements**\n* Grows best in: September to March\n* Needs: 5-7 cm daily rain/drought tolerance: ☀️💧\n* Critical temp range: 18-25°C\n* Soil: 🌱 well-draining, rich in organic matter\n\n**Tropical Survival Guide**\n* Unlike European cucumbers, requires more shade, especially during the hottest part of the day.\n* Local pest solution: Paraguayan farmers prevent aphids by spraying a mixture of water and neem oil.\n* Soil specifics: Pepino prefers slightly acidic to neutral soil pH (6.0-7.0).\n\n**Visual Guide**\n* Seedling stage: Look for 2-3 sets of leaves and a small, delicate stem.\n* Mature plant: Identify by its long, trailing vines and bright green, cylindrical fruit.\n* Common issue: Powdery mildew, recognizable by white, powdery patches on leaves.\n* Harvest cue: Pick when the fruit is dark green, about 15-20 cm long, and the skin is slightly soft to the touch.\n\n**Paraguayan Pro Tip**\n* Storage: Store pepinos in a cool, dry place or wrap them in a cloth to maintain humidity and keep them fresh for up to 3 days.\n* Preparation: Slice the pepino thinly and add it to a refreshing salad with locally-sourced ingredients like corn, beans, and avocado, dressed with a zesty citrus vinaigrette.",
+          "tokenUsage": {
+            "cached": 695,
+            "total": 695
+          },
+          "cached": true
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "botanical_name": "Manihot esculenta"
+          },
+          "description": "Cassava gardening guide",
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "botanical_name": "Manihot esculenta"
+        },
+        "metadata": {},
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "No assertions",
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0
+          },
+          "assertion": null
+        },
+        "id": "453fd5b2-c491-4adb-b549-e56051e600f9",
+        "latencyMs": 9,
+        "namedScores": {},
+        "prompt": {
+          "raw": "\"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*",
+          "label": "Urs-Test-1-Prompt-nr-1.txt: \"Act as a tropical agriculture expert. Generate a 1-page gardening guide for [BOTANICAL NAME] optimized for European expats in Paraguay. Use this structure:\r\n1. Header\r\nLocal name (Spanish/Guaraní): [AI inserts]\r\nEuropean counterpart: \"Similar to [EUROPEAN VEGETABLE] but [KEY DIFFERENCE].\"\r\nDifficulty: [🌱-🌱🌱🌱] based on tropical adaptability\r\n2. Core Requirements (Use icons ☀️💧🌱)\r\n\"Grows best in [MONTHS]\"\r\n\"Needs [X]cm daily rain/drought tolerance\"\r\nCritical temp range: [MIN]-[MAX]°C\r\n3. Tropical Survival Guide\r\n\"Unlike [EUROPEAN VEGETABLE], requires...\" (shade/soil/pest specifics)\r\nLocal pest solution: \"Paraguayan farmers prevent [PEST] by [LOCAL HACK]\"\r\n4. Visual Guide\r\n[AI suggests 3 image types: seedling stage, mature plant, common issue]\r\nHarvest cue: \"Pick when [VISUAL SIGN]\"\r\n5. Paraguayan Pro Tip\r\nStorage: [AI INSERTS LOCAL METHOD]\r\nPreparation: [AI INSERTS LOCAL COOKING TECHNIQUE] \r\nRules:\r\nUse metric terms\r\nStrict 350-word limit, bullet points, 8th-grade reading level\"*"
+        },
+        "promptId": "ee56ad1b6ffa99abacb2676aab0c0d9c69310f3b2072462ba85a1339d9b661e5",
+        "promptIdx": 0,
+        "provider": {
+          "id": "groq:llama-3.3-70b-versatile",
+          "label": ""
+        },
+        "response": {
+          "output": "**Tropical Gardening Guide: Cucumis sativus (Pepino)**\nLocal name (Spanish/Guaraní): Pepino/Güri\nEuropean counterpart: Similar to cucumber but with a sweeter taste and softer skin.\nDifficulty: 🌱🌱 (easy to moderate) based on tropical adaptability\n\n**Core Requirements**\n* Grows best in: September to March\n* Needs: 5-7 cm daily rain/drought tolerance: ☀️💧\n* Critical temp range: 18-25°C\n* Soil: 🌱 well-draining, rich in organic matter\n\n**Tropical Survival Guide**\n* Unlike European cucumbers, requires more shade, especially during the hottest part of the day.\n* Local pest solution: Paraguayan farmers prevent aphids by spraying a mixture of water and neem oil.\n* Soil specifics: Pepino prefers slightly acidic to neutral soil pH (6.0-7.0).\n\n**Visual Guide**\n* Seedling stage: Look for 2-3 sets of leaves and a small, delicate stem.\n* Mature plant: Identify by its long, trailing vines and bright green, cylindrical fruit.\n* Common issue: Powdery mildew, recognizable by white, powdery patches on leaves.\n* Harvest cue: Pick when the fruit is dark green, about 15-20 cm long, and the skin is slightly soft to the touch.\n\n**Paraguayan Pro Tip**\n* Storage: Store pepinos in a cool, dry place or wrap them in a cloth to maintain humidity and keep them fresh for up to 3 days.\n* Preparation: Slice the pepino thinly and add it to a refreshing salad with locally-sourced ingredients like corn, beans, and avocado, dressed with a zesty citrus vinaigrette.",
+          "tokenUsage": {
+            "cached": 695,
+            "total": 695
+          },
+          "cached": true
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "vars": {
+            "botanical_name": "Ipomoea batatas"
+          },
+          "description": "Sweet potato gardening guide",
+          "assert": [],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "botanical_name": "Ipomoea batatas"
+        },
+        "metadata": {},
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 2,
+      "failures": 0,
+      "errors": 0,
+      "tokenUsage": {
+        "cached": 1390,
+        "completion": 0,
+        "prompt": 0,
+        "total": 1390,
+        "numRequests": 2,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0
+        }
+      }
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Paraguayan Crops Gardening Guide Test",
+    "prompts": [
+      "file://E:\\code-projects\\urs-paraguayan-crops\\Urs-Test-1-Prompt-nr-1.txt"
+    ],
+    "providers": [
+      {
+        "id": "groq:llama-3.3-70b-versatile",
+        "config": {
+          "temperature": 0.7
+        }
+      }
+    ],
+    "tests": [
+      {
+        "vars": {
+          "botanical_name": "Manihot esculenta"
+        },
+        "description": "Cassava gardening guide"
+      },
+      {
+        "vars": {
+          "botanical_name": "Ipomoea batatas"
+        },
+        "description": "Sweet potato gardening guide"
+      }
+    ],
+    "scenarios": [],
+    "env": {},
+    "sharing": true,
+    "defaultTest": {
+      "vars": {},
+      "assert": [],
+      "options": {},
+      "metadata": {}
+    },
+    "outputPath": [
+      "test1.json"
+    ],
+    "extensions": [],
+    "metadata": {}
+  },
+  "shareableUrl": null
+}

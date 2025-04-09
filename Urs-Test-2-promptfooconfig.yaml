@@ -1,0 +1,95 @@
+description: "Paraguayan Crops Gardening Guide Test"
+
+# ========== PROMPT CONFIGURATION ==========
+# The 'prompts' section defines the prompt templates to be tested
+# You can specify multiple prompts to compare different versions
+prompts:
+  - 'Create a 1-page gardening guide for {{botanical_name}} in Paraguay. Include:
+      1. Local name (Spanish/Guaraní)
+      2. Growing conditions (soil, climate)
+      3. Planting instructions
+      4. Care requirements
+      5. Harvesting tips
+      6. Common pests and diseases
+      7. Cultural significance in Paraguay'    
+
+# ========== PROVIDER CONFIGURATION ==========
+# 'providers' defines which LLM models/APIs will process your prompts
+# Each provider has an 'id' that specifies the model and optional configuration
+providers:
+  - id: groq:llama-3.3-70b-versatile
+    config:
+      temperature: 0.7
+
+
+# ========== TEST CASES ==========
+# 'tests' define the different inputs to test with your prompts
+# Each test case can have variables, descriptions, and assertions
+tests:
+    
+  # Test case 2: Cassava
+  - vars:
+      botanical_name: "Manihot esculenta"
+    description: "Cassava gardening guide"
+
+  # # Test case 3: Sweet potato
+  - vars:
+      botanical_name: "Ipomoea batatas"
+      # outputpath:"Sweetpotatoe.json"
+    description: "Sweet potato gardening guide" 
+     
+
+# ========== OUTPUT CONFIGURATION ==========
+# Controls where and how results are saved
+outputPath: "./results/test2.json"  # Path to save results
+# The results will be saved in JSON format and can be viewed later
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ========== ADVANCED CONFIGURATION ==========
+
+# ========== EVALUATION OPTIONS ==========
+# Controls how tests are executed (commented out for now)
+# evaluateOptions:
+#   maxConcurrency: 5       # Number of tests to run in parallel
+#   showProgressBar: true   # Display progress during evaluation
+#   cache: true             # Cache results to avoid re-running identical tests
+
+# ========== TRANSFORMATIONS ==========
+# Transformations process the output before evaluation or display
+# These are JavaScript functions that can modify or extract data from outputs
+# transforms:
+#   - name: "Extract word count"
+#     path: "./transforms/wordCount.js"  # Path to a JavaScript file
+#   - name: "Check structure compliance"
+#     path: "./transforms/structureCheck.js"
+#   # You can also define inline transformations:
+#   # - name: "Extract temperature"
+#   #   function: |
+#   #     (output) => {
+#   #       const match = output.match(/(\d+)-(\d+)°C/);
+#   #       return match ? { min: match[1], max: match[2] } : null;
+#   #     }
+
+# ========== SHARING OPTIONS ==========
+# Controls how results can be shared with others (commented out for now)
+# sharing:
+#   enabled: true           # Enable sharing functionality
+#   title: "Paraguayan Crops Gardening Guide Evaluation"
+#   description: "Testing gardening guide generation for different crops in Paraguay"
+#   # When enabled, promptfoo generates a shareable link to view results
